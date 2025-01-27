@@ -26,11 +26,12 @@
 			.carousel {
 				display: flex;
                 gap: 4mm;
+				aspect-ratio: 1 / 1;
+				height: 90vh;
                 overflow-x: auto;
                 scroll-snap-type: x mandatory;
                 scroll-behavior: smooth;
                 -webkit-overflow-scrolling: touch;
-				width: 3in;
 				margin: auto;
 			}
 
@@ -42,11 +43,12 @@
                 background-color: transparent;
                 overscroll-behavior: none;
 				text-align: center;
+				height: 100%;
 
 				img {
 					border-radius: 3mm;
-					width: 2in;
-					height: 3in;
+					height: 90%;
+					aspect-ratio: 2 / 3;
 					object-fit: cover;
 					display: block;
 					margin-bottom: 2mm;
@@ -56,7 +58,6 @@
 				.name {
 					font-weight: bold;
 					text-overflow: ellipsis;
-					max-width: 2in;
 				}
 
 				.position, .age {
