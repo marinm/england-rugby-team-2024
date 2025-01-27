@@ -9,13 +9,18 @@
             * {
                 box-sizing: border-box;
 				font-family: sans-serif;
+				scrollbar-color: transparent;
             }
 
 			body {
 				background-color: black;
 				color: white;
 				margin: 0;
-				padding: 2mm;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
 			}
 
 			.carousel {
@@ -25,12 +30,12 @@
                 scroll-snap-type: x mandatory;
                 scroll-behavior: smooth;
                 -webkit-overflow-scrolling: touch;
-				width: 2in;
+				width: 3in;
 				margin: auto;
 			}
 
             .card {
-                scroll-snap-align: start;
+                scroll-snap-align: center;
                 flex-shrink: 0;
                 background: #eee;
                 position: relative;
