@@ -26,29 +26,31 @@
                 padding: 10mm 0;
                 flex-direction: column;
                 place-items: center;
+                gap: 4mm;
                 overflow-y: scroll;
                 scroll-snap-type: y mandatory;
+                scroll-padding: 10mm;
             }
 
             .card {
-                scroll-snap-align: center;
+                background-color: #222222;
+                border: 1mm solid #444444;
+                scroll-snap-align: start;
                 width: fit-content;
                 flex-shrink: 0;
-                background: #eee;
                 position: relative;
-                background-color: transparent;
                 overscroll-behavior: none;
                 text-align: center;
                 height: 80vh;
+                border-radius: 3mm;
+                overflow: hidden;
 
                 img {
-                    border-radius: 3mm;
                     height: 90%;
                     aspect-ratio: 2 / 3;
                     object-fit: cover;
                     display: block;
                     margin-bottom: 2mm;
-                    border: 1mm solid white;
                 }
 
                 .name {
